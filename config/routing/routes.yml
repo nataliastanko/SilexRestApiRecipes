@@ -1,0 +1,4 @@
+# config/routes.yml
+api_recipes:
+    prefix: /api/v1/recipes
+    resource: api_recipes.yml

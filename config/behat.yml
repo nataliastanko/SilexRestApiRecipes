@@ -1,0 +1,8 @@
+# config/behat.yml
+default:
+    formatters:
+        pretty: true
+    suites:
+        recipe_stories:
+            paths:    [ tests/functional/stories/recipes ]
+            contexts: [ Application\Api\Test\Recipe\RecipeContext ]

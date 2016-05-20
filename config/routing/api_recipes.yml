@@ -1,0 +1,46 @@
+# config/routes.yml
+
+index:
+    path:     /
+    defaults:
+        _controller: 'Application\Api\Recipe\Controller\RecipesController::index'
+    methods:  [GET]
+
+show:
+    path:     /{id}
+    defaults:
+        _controller: 'Application\Api\Recipe\Controller\RecipesController::show'
+    requirements:
+        id: \d+
+    methods:  [GET]
+
+create:
+    path:     /
+    defaults:
+        _controller: 'Application\Api\Recipe\Controller\RecipesController::create'
+    methods:  [POST]
+
+update:
+    path:     /{id}
+    defaults:
+        _controller: 'Application\Api\Recipe\Controller\RecipesController::update'
+    requirements:
+        id: \d+
+    methods:  [PUT]
+
+delete:
+    path:     /{id}
+    defaults:
+        _controller: 'Application\Api\Recipe\Controller\RecipesController::delete'
+    requirements:
+        id: \d+
+    methods:  [DELETE]
+
+vote:
+    path:     /{id}/vote/{vote}
+    defaults:
+        _controller: 'Application\Api\Recipe\Controller\RecipesController::vote'
+    requirements:
+        id: \d+
+        vote: \d+
+    methods:  [PATCH]
