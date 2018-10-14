@@ -15,7 +15,7 @@
         "symfony/validator": "~2.3",
         "symfony/monolog-bridge": "~2.3",
         "symfony/property-access": "~3.0",
-        "ddeboer/data-import": "~0.1"
+        "ddeboer/data-import": "0.18.0"
     },
     "require-dev": {
         "symfony/browser-kit": "~2.7",
